@@ -10,6 +10,11 @@ int main(void)     //函数头 (不包含花括号的部分)
 {                  //函数体 (花括号的部分)
 
     using namespace std;    // 这条语句是 搭配 iostream 头文件使用的, 用于指定程序中使用的命名空间
+    
+    cout << "Come up and C++ me some time.";    // C++语句, 以分号作为一条语句的结尾
+    cout << endl;                               // endl 是一个特殊的C++符号, 代表"重起一行", 在流输出中将导致光标移到下一行的开头位置.
+    cout << "You won't regret it !" << endl;    
+    
     return 0;               // C++语句, 以分号作为一条语句的结尾
                             // return 0; 表示函数的末尾
 }
