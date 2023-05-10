@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Chapter5",
+    "\\Chapter5\\example_code"
   ],
-  "SelectedNode": "\\D:\\my_cpp",
+  "SelectedNode": "\\Chapter5\\example_code\\a.out",
   "PreviewInSolutionExplorer": false
 }
