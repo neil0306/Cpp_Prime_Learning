@@ -112,10 +112,11 @@
 
 1. 首先，去 https://github.com/niXman/mingw-builds-binaries/releases 下载最新的MinGW版本
   ![](images/MingG版本示意图.png)
+   - 官网：https://www.mingw-w64.org/downloads/#mingw-builds
    - 我在自己的 64位 win10下，下载的是`x86_64-12.2.0-release-win32-seh-msvcrt-rt_v10-rev2.7z`
    - 下载完成后直接解压，长下面的样子
   ![](images/MinG解压后的文件列表.png)
-2. 然后需要配置一下环境变量，方便直接在 cmd、powershell 里执行`gcc`指令
+1. 然后需要配置一下环境变量，方便直接在 cmd、powershell 里执行`gcc`指令
    - 鼠标右键点击 “此电脑”，选择属性，然后找到左侧的`高级系统设置`（win10如下图）
   ![](images/高级系统设置.png)
    - 点击`环境变量`
@@ -124,5 +125,5 @@
   ![](images/系统变量的path.png)
    - 在编辑界面`新建`，然后把 MinGW 解压文件夹里的 `bin` 目录的`绝对路径`贴进去，确认就行。
   ![](images/bin目录添加到path.png)
-3. 重启vscode，然后再打开terminal，直接输入 `gcc`，就能识别到这个命令了（此时得到的报错是没有指定要编译的文件）。
+1. 重启vscode，然后再打开terminal，直接输入 `gcc`，就能识别到这个命令了（此时得到的报错是没有指定要编译的文件）。
    - 在 windows 中， 比较推荐使用 `g++` 而不是 `gcc`，因为 `g++编译得到的是.exe文件`，可以直接在终端运行，而`gcc得到的是.out文件`，不能直接在终端（powershell中）运行。
