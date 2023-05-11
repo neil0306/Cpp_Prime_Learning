@@ -1,9 +1,12 @@
 #include <iostream>
+#include <array>
 
 const int ArrSize = 16;
 
 int main(void){
-    long long factorials[ArrSize];
+    using namespace std;
+    // long long factorials[ArrSize];   // 原来的代码
+    array<long long, ArrSize> factorials;
 
     factorials[0] = factorials[1] = 1LL;  // long long 类型
 
