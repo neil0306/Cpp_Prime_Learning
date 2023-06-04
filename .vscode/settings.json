@@ -64,6 +64,7 @@
         "algorithm": "cpp",
         "fstream": "cpp"
     },
+    "files.encoding": "utf8",
     "markdown-pdf.styles": [
         "/Users/laining/Downloads/Cpp_Prime_Learning/markdown_style_css_files/markdown.css"
     ]
