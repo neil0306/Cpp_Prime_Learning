@@ -65,7 +65,8 @@
         "fstream": "cpp",
         "deque": "cpp",
         "iomanip": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "charconv": "cpp"
     },
     "files.encoding": "utf8",
     "markdown-pdf.styles": [
