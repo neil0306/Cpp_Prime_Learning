@@ -1,3 +1,6 @@
+/*
+    类的声明
+*/
 #ifndef __STOCH_00_H__
 #define __STOCH_00_H__
 
@@ -11,7 +14,8 @@ class Stock
         double share_val;       // 股票单价
         double total_val;       // 股票总价值
 
-        void setTotal(double &total_val) 
+        // 计算总资产
+        void setTotal() 
         {
             total_val = shares * share_val;
         }
@@ -19,7 +23,7 @@ class Stock
     public:   // 公有部分, 任何代码都可以直接访问
         void acquire(const std::string &co, long n, double price);
         void buy(long num, double price);
-        double sell(long num, double price);
+        void sell(long num, double price);
         void update(double price);
         void show();
 
