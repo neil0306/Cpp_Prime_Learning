@@ -57,6 +57,6 @@ void Stock::show()
     using namespace std;
     cout << "Company: " << company << endl;
     cout << "Shares: " << shares << endl;
-    cout << "Share price" << share_val << endl;
+    cout << "Share price: " << share_val << endl;
     cout << "Total worth: " << total_val << endl;
 }
