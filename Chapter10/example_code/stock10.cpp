@@ -19,14 +19,11 @@ Stock::Stock(const std::string &co, long n, double price)
     setTotal();     // 直接调用了 private 里的函数
 }
 
-// 测试第二种默认构造函数
-// Stock::Stock()
-// {
-//     company = "no name";
-//     shares = 0;
-//     share_val = 0.0;
-//     total_val = 0.0;
-// }
+// 定义一个析构函数
+Stock::~Stock()
+{
+    std::cout << "Bye! " << company << std::endl;
+}
 
 void Stock::buy(long num, double price)
 {
@@ -61,7 +58,7 @@ void Stock::update(double price)
     setTotal();
 }
 
-void Stock::show()
+void Stock::show() const // 增加const 关键词, 定义为"const 成员函数"
 {
     using namespace std;
     cout << "Company: " << company << endl;

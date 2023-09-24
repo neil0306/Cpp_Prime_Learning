@@ -1,8 +1,8 @@
 /*
     类的声明
 */
-#ifndef __STOCH_00_H__
-#define __STOCH_00_H__
+#ifndef __STOCH_10_H__
+#define __STOCH_10_H__
 
 #include <string>
 
@@ -21,14 +21,13 @@ class Stock
         }
 
     public:   // 公有部分, 任何代码都可以直接访问
-        //Stock(const std::string &co, long n, double price);  // 原来的 acquire 函数改写为自定义的构造函数
-        Stock(const std::string &co = "Error", long n = 0, double price = 0.0); // 测试第一种默认构造函数
-        // Stock(); // 测试第二种默认构造函数
+        Stock(const std::string &co, long n, double price);  // 原来的 acquire 函数改写为自定义的构造函数
+        ~Stock();  // 声明一个析构函数 (第一种写法)
 
         void buy(long num, double price);
         void sell(long num, double price);
         void update(double price);
-        void show();
+        void show() const;  // 增加 const 关键词, 将show函数定义为 "const 成员函数" 
 
 
 };  // 别忘记分号, 这和结构体的语法是相同的
