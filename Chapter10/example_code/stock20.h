@@ -28,7 +28,7 @@ class Stock
         void sell(long num, double price);
         void update(double price);
         void show() const;  // 增加 const 关键词, 将show函数定义为 "const 成员函数" 
-        const Stock topval(const Stock &s) const;
+        const Stock& topval(const Stock &s) const;
 
 
 };  // 别忘记分号, 这和结构体的语法是相同的

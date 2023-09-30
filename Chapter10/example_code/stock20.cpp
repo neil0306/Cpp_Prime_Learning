@@ -67,7 +67,7 @@ void Stock::show() const // 增加const 关键词, 定义为"const 成员函数"
     cout << "Total worth: " << total_val << endl;
 }
 
-const Stock Stock::topval(const Stock &s) const 
+const Stock& Stock::topval(const Stock &s) const 
 {
     if(s.total_val > total_val){    // total_val 等价于 this->total_val
         return s;
