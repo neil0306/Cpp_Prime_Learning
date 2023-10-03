@@ -1,8 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/laining/Downloads/Cpp_Prime_Learning/Chapter9/example_code/p4/main'
-relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003F94, symSize: 0x14 }
-  - { offsetInCU: 0x44, offset: 0x44, size: 0x8, addend: 0x0, symName: __ZN5SALES5salesE, symObjAddr: 0x51F8, symBinAddr: 0x100004000, symSize: 0x0 }
-  - { offsetInCU: 0x2CD7, offset: 0x2CD7, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003F94, symSize: 0x14 }
-...
