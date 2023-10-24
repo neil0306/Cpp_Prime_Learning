@@ -26,6 +26,7 @@ class RatedPlayer : public TableTennisPlayer        // 派生出RatedPlayer, pub
         unsigned int rating;
     public:
         RatedPlayer(unsigned int r = 0, const string &fn = "none", const string &ln = "none", bool ht = false);
+        RatedPlayer(unsigned int r, const TableTennisPlayer &tp);       // 此时直接传了一个基类的对象作为参数
         unsigned int Rating() const {return rating;}
         void ResetRating(unsigned int r) {rating = r;}
 };

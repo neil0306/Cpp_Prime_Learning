@@ -6,29 +6,9 @@ using namespace std;
 
 int main(void)
 {
-/*
-    TableTennisPlayer player1("Chuck", "Blizzard", true);
-    TableTennisPlayer player2("Tara", "Boomdea", false);
-    player1.Name();
-    if(player1.HasTable()){
-        cout << ": has a table." << endl;
-    }
-    else{
-        cout << ": hasn't a table." << endl;
-    }
+    RatedPlayer rplayer1(1140, "Mallory", "Duck", false);
+    TableTennisPlayer player1("Tara", "Boomdea", false);
 
-    player2.Name();
-    if(player2.HasTable()){
-        cout << ": has a table." << endl;
-    }
-    else{
-        cout << ": hasn't a table." << endl;
-    }
-*/
-
-
-    // 测试派生类
-    RatedPlayer rplayer1(1140, "Mallory", "Duck", false);   // 派生类创建对象
     rplayer1.Name();
     if(rplayer1.HasTable()){
         cout << ": has a table." << endl;
@@ -36,9 +16,14 @@ int main(void)
     else{
         cout << ": hasn't a table." << endl;
     }
-
     rplayer1.Name();
-    cout << ": rating: " <<  rplayer1.Rating() << endl;
+    cout << ": Rating: " << rplayer1.Rating() << endl;
+
+
+    RatedPlayer rplayer2(1212, player1);        // 使用自定义的第二个构造函数
+    cout << "Name: ";
+    rplayer2.Name();     // 基类的成员函数
+    cout << ", Rating: " << rplayer2.Rating() << endl;
 
     return 0;
 }
