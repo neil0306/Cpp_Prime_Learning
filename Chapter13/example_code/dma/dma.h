@@ -33,7 +33,18 @@ class lacksDMA : public baseDMA
 }; 
 
 // 带new的派生类
+class hasDMA : public baseDMA
+{
+    private:
+        char * style;
+    public:
+    hasDMA(const char *l = "null", int r = 0, const char *s = "null");
+    hasDMA(const baseDMA &rs, const char *s);
+    hasDMA(const hasDMA &hs);       // 复制构造函数
+    virtual ~hasDMA();      // 由于这个派生类的数据成员是用了 new, 所以一定要自定义析构函数
 
-
+    hasDMA & operator=(const hasDMA &hs);   // 重写了复制构造函数, 就一定要重写赋值运算符
+    friend ostream & operator<<(ostream &os, const hasDMA &rs);
+};
 
 #endif //!__DMA_H__

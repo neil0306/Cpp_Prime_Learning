@@ -66,7 +66,9 @@
         "deque": "cpp",
         "iomanip": "cpp",
         "stack": "cpp",
-        "charconv": "cpp"
+        "charconv": "cpp",
+        "iterator": "cpp",
+        "memory_resource": "cpp"
     },
     "files.encoding": "utf8",
     "markdown-pdf.styles": [

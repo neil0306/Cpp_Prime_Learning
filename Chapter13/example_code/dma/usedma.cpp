@@ -22,5 +22,13 @@ int main(void)
     cout << "-----------------" << endl;
 
     // 测试使用new的派生类
+    hasDMA map("Keys", 5, "Mercator");
+    cout << "Displaying hasDMA object: " << endl;
+    cout << map;
+    cout << "-----------------" << endl;
 
+    hasDMA map2 = map;              // 这是初始化, 触发 复制构造函数 (从输出可以看到)
+    map2 = map;                     // 这里是调用赋值运算符
+    cout << "Result of hasDMA copy: " << endl;
+    cout << map2;
 }
