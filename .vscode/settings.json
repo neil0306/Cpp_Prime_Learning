@@ -68,7 +68,8 @@
         "stack": "cpp",
         "charconv": "cpp",
         "iterator": "cpp",
-        "memory_resource": "cpp"
+        "memory_resource": "cpp",
+        "valarray": "cpp"
     },
     "files.encoding": "utf8",
     "markdown-pdf.styles": [
