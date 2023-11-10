@@ -11,7 +11,7 @@ Wine::Wine(const char *l, int y, const int yr[], const int bot[]) : label(l), ye
 {
 }
 
-Wine::Wine(const char *l, int y) : label(l), year(y), info(ArrInt(0, 0), ArrInt(0, 0))      // ArrInt(0, 0) 表示数组中所有元素都是初始化为0, 然后数组内部设置为没有元素
+Wine::Wine(const char *l, int y) : label(l), year(y), info(ArrInt(0, y), ArrInt(0, y))      // ArrInt(0, 0) 表示数组中所有元素都是初始化为0, 然后数组内部设置为没有元素
 {
 }
 
