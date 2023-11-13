@@ -30,7 +30,7 @@ bool Queue::isFull() const
 
 int Queue::queueCount() const
 {
-    return qsize;
+    return items;
 }
 
 // 入队操作是在链表尾部增加节点
