@@ -72,7 +72,10 @@
         "valarray": "cpp",
         "queue": "cpp",
         "__availability": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "set": "cpp",
+        "__tree": "cpp",
+        "map": "cpp"
     },
     "files.encoding": "utf8",
     "markdown-pdf.styles": [
