@@ -71,7 +71,8 @@
         "memory_resource": "cpp",
         "valarray": "cpp",
         "queue": "cpp",
-        "__availability": "cpp"
+        "__availability": "cpp",
+        "list": "cpp"
     },
     "files.encoding": "utf8",
     "markdown-pdf.styles": [
